@@ -15,13 +15,11 @@ This is a real-time safety monitoring system that uses computer vision and AI to
 # Dependencies
 
 - Python 3.8+
-- `ultralytics` (for YOLOv8)
-- `opencv-python`
-- `torch`, `torchvision`
-- `Pillow`
-- `tkinter` (comes with most Python installations)
+- ultralytics (for YOLOv8)
+- opencv-python
+- torch , torchvision
+- Pillow
+- tkinter (comes with most Python installations)
 
-Install with:
-
-```bash
+#Installation
 pip install ultralytics opencv-python torch torchvision Pillow
