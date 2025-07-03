@@ -1,27 +1,21 @@
-# Real-Time Safety Helmet Detection System
+This project implements a real-time safety helmet detection system that leverages MediaPipe Pose for accurate head keypoint detection. By combining pose landmarks with HSV color-based helmet detection (yellow and red helmets), it identifies people wearing safety helmets in a live webcam feed.
 
-This is a real-time safety monitoring system that uses computer vision and AI to detect whether people are wearing safety helmets in a live webcam feed. It combines YOLO object detection, custom color-based helmet detection, and real-time edge enhancement via Canny filter (implemented in PyTorch). A modern GUI is provided using Tkinter for visualization, logging, and screenshot review.
+#Features
+Head and body keypoint detection using MediaPipe Pose
+Yellow and red helmet detection via HSV color filtering
+Visual bounding boxes highlighting heads and helmets
+Automatic screenshot capture with helmet count overlay
+Dark-themed GUI built with Tkinter and PIL
+Event logging and screenshot management
+Optimized for real-time performance with GPU support when available
 
-# Features
+#Requirements
+Python 3.8+
+mediapipe
+opencv-python
+torch
+pillow
+tkinter (usually included with Python)
 
-- Detects persons using YOLOv8
-- Detects yellow/red safety helmets using HSV color range
-- Canny-based edge enhancement using PyTorch
-- Takes automatic screenshots every few seconds
-- Displays logs and a screenshot gallery in the GUI
-- Dark theme GUI with tkinter and PIL
-- Real-time performance with multithreading
-
-# Dependencies
-
-- Python 3.8+
-- `ultralytics` (for YOLOv8)
-- `opencv-python`
-- `torch`, `torchvision`
-- `Pillow`
-- `tkinter` (comes with most Python installations)
-
-Install with:
-
-```bash
-pip install ultralytics opencv-python torch torchvision Pillow
+#Installation
+pip install mediapipe opencv-python torch pillow
