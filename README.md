@@ -21,5 +21,6 @@ This is a real-time safety monitoring system that uses computer vision and AI to
 - Pillow
 - tkinter (comes with most Python installations)
 
-#Installation
+# Installation
+
 pip install ultralytics opencv-python torch torchvision Pillow
